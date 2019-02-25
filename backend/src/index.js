@@ -3,6 +3,11 @@ import http from 'http';
 const hostname = '0.0.0.0';
 const port = 80;
 
+
+process.on('SIGINT', function() {
+  process.exit();
+});
+
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
