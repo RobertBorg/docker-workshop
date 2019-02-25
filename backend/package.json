@@ -5,6 +5,7 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
+    "redis": "^2.8.0",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3"
   },

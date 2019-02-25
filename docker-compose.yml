@@ -1,0 +1,10 @@
+version: '3'
+services:
+  backend:
+    build: ./backend
+    ports:
+    - "8080:80"
+    depends_on:
+    - redis
+  redis:
+    image: redis:5.0.3-alpine

@@ -7,5 +7,10 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.bundle.js'
-  }
+  },
+  resolve: {
+    alias: {
+      'hiredis': path.join(__dirname, 'aliases/hiredis.js')
+    }
+  },
 };
