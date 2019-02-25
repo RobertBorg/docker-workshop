@@ -6,5 +6,11 @@ services:
     - "8080:80"
     depends_on:
     - redis
+  backend2:
+    build: ./backend
+    ports:
+    - "8081:80"
+    depends_on:
+    - redis
   redis:
     image: redis:5.0.3-alpine
